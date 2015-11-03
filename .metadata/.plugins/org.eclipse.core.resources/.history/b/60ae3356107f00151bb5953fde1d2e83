@@ -1,0 +1,67 @@
+package com.lex.love.utils;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
+
+import android.os.AsyncTask;
+
+public class HttpUtils {
+	public static int TIME_OUT_MILLIS = 5000;
+	public static String REQUEST_METHOD = "GET";
+	
+	public static void send(final String url, HttpCallbackListener listener) {
+		new Thread(new Runnable() {
+
+			@Override
+			public void run() {
+
+			}
+
+		}).start();
+	}
+
+	class MyTask extends AsyncTask<String, Integer, String> {
+
+		@Override
+		protected String doInBackground(String... params) {
+			HttpURLConnection connection = null;
+			String result = null;
+			try {
+				URL url = new URL(params[0]);
+				connection = (HttpURLConnection) url.openConnection();
+				connection.setConnectTimeout(TIME_OUT_MILLIS);
+				connection.setRequestMethod(REQUEST_METHOD);
+				connection.setReadTimeout(TIME_OUT_MILLIS);
+				connection.connect();
+				
+				InputStream input = connection.getInputStream();
+				BufferedReader reader = new BufferedReader(new InputStreamReader(input));
+				StringBuilder sb = new StringBuilder();
+				String line = "";
+				while((line = reader.readLine()) != null) {
+					sb.append(line);
+				}
+				result = sb.toString();
+				
+			} catch (MalformedURLException e) {
+				e.printStackTrace();
+			} catch (IOException e) {
+				e.printStackTrace();
+			} finally {
+				connection.disconnect();
+			}
+			return result;
+		}
+
+		@Override
+		protected void onPostExecute(String result) {
+			super.onPostExecute(result);
+		}
+
+	}
+}

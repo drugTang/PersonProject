@@ -1,0 +1,12 @@
+1446210908904	Rename package 'com.lex.app.activity'
+1446210983737	Rename type 'SplashActivity'
+1446211149458	Rename resource 'activity_splash.xml'
+1446293433433	Rename resource 'newscenter_press.png'
+1446293440237	Rename resource 'newscenter.png'
+1446293675246	Extracts string '首页' into R.string.home_name
+1446294380898	Rename resource 'govaffairs_press.png'
+1446294388025	Rename resource 'govaffairs.png'
+1446294399161	Rename resource 'smartservice_press.png'
+1446294405821	Rename resource 'smartservice.png'
+1446294420938	Copy file
+1446294446149	Copy file

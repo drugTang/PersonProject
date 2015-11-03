@@ -1,0 +1,21 @@
+package com.lex.app.pages.content;
+
+import com.lex.app.R;
+import com.lex.app.pages.BaseContentPager;
+
+import android.app.Activity;
+import android.view.View;
+
+public class LibContentPager extends BaseContentPager {
+
+	public LibContentPager(Activity activity) {
+		super(activity);
+	}
+
+	@Override
+	public View initView() {
+		View view = View.inflate(mActivity, R.layout.lib_frame_pager_view, null);
+		return view;
+	}
+
+}

@@ -1,0 +1,41 @@
+package com.lex.app.activity;
+
+import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
+import com.jeremyfeinstein.slidingmenu.lib.app.SlidingFragmentActivity;
+import com.lex.app.R;
+import com.lex.app.fragment.impl.ContentFragment;
+import com.lex.app.fragment.impl.LeftMenuFragment;
+
+import android.os.Bundle;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
+
+public class MainActivity extends SlidingFragmentActivity {
+
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		setBehindContentView(R.layout.left_sliding_menu);
+
+		SlidingMenu slidingMenu = getSlidingMenu();
+		slidingMenu.setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);
+		slidingMenu.setBehindOffsetRes(R.dimen.slidingmenuOffset);
+		
+		initData();
+		initView();
+	}
+	
+	public void initView() {
+		FragmentManager manager = getSupportFragmentManager();
+		FragmentTransaction transaction = manager.beginTransaction();
+		ContentFragment contentFragment = new ContentFragment();
+		LeftMenuFragment leftmenuFragment = new LeftMenuFragment();
+		transaction.replace(R.id.fl_content, contentFragment, "CONTENT_FRAGMNET_TAG");
+		transaction.replace(R.id.fl_left_menu, leftmenuFragment,"LEFT_MENU_FRAGMENT_TAG");
+		transaction.commit();
+	}
+
+	public void initData() {
+	}
+}

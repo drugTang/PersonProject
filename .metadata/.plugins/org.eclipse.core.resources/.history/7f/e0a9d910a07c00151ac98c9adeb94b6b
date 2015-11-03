@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="40dp"
+    android:orientation="vertical" >
+    
+    <TableRow >
+	    <TextView android:id="@+id/tv_search_1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#EC407A"
+	        android:textSize="14sp"
+	        android:layout_marginLeft="30dp"
+	        android:text="红楼梦" />
+	    <TextView android:id="@+id/tv_search_2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#00BCD4"
+	        android:layout_marginLeft="30dp"
+	        android:textSize="30sp"
+	        android:text="狂人日记" />
+    </TableRow>
+    <TableRow>
+	    <TextView android:id="@+id/tv_search_3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#E53935"
+	        android:textSize="26sp"
+	        android:layout_marginLeft="30dp"
+	        android:text="医学免疫学" />
+	    
+    </TableRow>
+    <TableRow >
+        <TextView android:id="@+id/tv_search_4"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#00BCD4"
+	        android:layout_marginLeft="30dp"
+	        android:textSize="30sp"
+	        android:text="狂人日记" />
+	    <TextView android:id="@+id/tv_search_5"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#EC407A"
+	        android:textSize="14sp"
+	        android:layout_marginLeft="30dp"
+	        android:text="红楼梦" />
+	    <TextView android:id="@+id/tv_search_6"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#00BCD4"
+	        android:layout_marginLeft="30dp"
+	        android:textSize="30sp"
+	        android:text="狂人日记" />
+    </TableRow>
+    <TableRow >
+	    <TextView android:id="@+id/tv_search_7"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#EC407A"
+	        android:textSize="14sp"
+	        android:layout_marginLeft="30dp"
+	        android:text="红楼梦" />
+	    <TextView android:id="@+id/tv_search_8"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#00BCD4"
+	        android:layout_marginLeft="30dp"
+	        android:textSize="30sp"
+	        android:text="狂人日记" />
+    </TableRow>
+    <TableRow >
+	    <TextView android:id="@+id/tv_search_9"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#EC407A"
+	        android:textSize="14sp"
+	        android:layout_marginLeft="30dp"
+	        android:text="红楼梦" />
+	    <TextView android:id="@+id/tv_search_10"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#00BCD4"
+	        android:layout_marginLeft="30dp"
+	        android:textSize="30sp"
+	        android:text="狂人日记" />
+    </TableRow>
+    
+
+</TableLayout>

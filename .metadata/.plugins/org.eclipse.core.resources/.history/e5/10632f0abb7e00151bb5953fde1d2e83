@@ -1,0 +1,24 @@
+package com.lex.app.pages.content;
+
+import com.lex.app.R;
+import com.lex.app.pages.BaseContentPager;
+
+import android.app.Activity;
+import android.view.View;
+import android.widget.GridView;
+
+public class StoreContentPager extends BaseContentPager {
+	private GridView mGridView;
+
+	public StoreContentPager(Activity activity) {
+		super(activity);
+	}
+
+	@Override
+	public View initView() {
+		View view = View.inflate(mActivity, R.layout.store_content_pager_view, null);
+		mGridView = (GridView) view.findViewById(R.id.gv_top);
+		return view;
+	}
+
+}

@@ -1,0 +1,17 @@
+<resources>
+
+    <string name="app_name">myApp</string>
+
+    <string name="home">首页</string>
+    <string name="lib">图书馆</string>
+    <string name="bbs">论坛</string>
+    <string name="store">商城</string>
+    <string name="setting">设置</string>
+    <string name="lib_news">本馆新闻</string>
+    <string name="lib_borrow">热门借阅</string>
+    <string name="lib_search">热门搜索</string>
+    <string name="imge_content_description">ImageButton</string>
+    <string name="search_edit_hint">搜索</string>
+    <string name="history_title">历史记录</string>
+
+</resources>

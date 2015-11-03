@@ -1,0 +1,19 @@
+package com.lex.app.pages.lib;
+
+import com.lex.app.pages.BaseContentPager;
+
+import android.app.Activity;
+import android.view.View;
+
+public class LibNewsDetailPager extends BaseContentPager {
+
+	public LibNewsDetailPager(Activity activity) {
+		super(activity);
+	}
+
+	@Override
+	public View initView() {
+		return null;
+	}
+
+}

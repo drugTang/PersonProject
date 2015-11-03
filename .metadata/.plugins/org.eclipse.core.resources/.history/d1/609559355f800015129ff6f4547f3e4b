@@ -1,0 +1,18 @@
+package com.lex.love.pager.frame;
+
+import com.lex.love.pager.BaseFramePager;
+
+import android.app.Activity;
+
+public class PicFramePager extends BaseFramePager {
+
+	public PicFramePager(Activity activity) {
+		super(activity);
+	}
+
+	@Override
+	public void initView() {
+
+	}
+
+}

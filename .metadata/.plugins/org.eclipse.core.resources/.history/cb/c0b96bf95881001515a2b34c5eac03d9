@@ -1,0 +1,15 @@
+package com.lex.love.pager.content;
+
+import com.lex.love.pager.BaseContentPager;
+
+import android.view.View;
+
+public class OtherContentPager extends BaseContentPager {
+
+	@Override
+	public View initView() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

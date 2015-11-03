@@ -1,0 +1,35 @@
+package com.lex.love.activity;
+
+import com.lex.love.R;
+import com.lex.love.Global.URLCollector;
+import com.lex.love.utils.HttpCallbackListener;
+import com.lex.love.utils.HttpUtils;
+import com.lex.love.view.TypeView;
+
+import android.app.Activity;
+import android.os.Bundle;
+
+public class MainActivity extends Activity {
+	private TypeView mContentText;
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		mContentText = (TypeView) findViewById(R.id.tv_content);
+		getDataFromServer();
+	}
+	
+	private void getDataFromServer() {
+		HttpUtils.send(URLCollector.LOVE_MESSAGE_URL, new HttpCallbackListener(){
+
+			@Override
+			public void onSuccess(String result) {
+				mContentText.start(result);
+			}
+
+			@Override
+			public void onFailure(Exception e, String msg) {
+				System.out.println("MainActivity 从服务器获取数据失败："+ msg);
+			}});
+	}
+}

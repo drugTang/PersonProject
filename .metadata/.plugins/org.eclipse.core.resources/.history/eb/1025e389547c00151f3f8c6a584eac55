@@ -1,0 +1,45 @@
+package com.lex.app.adapter;
+
+import java.util.List;
+
+import com.lex.app.BaseApplication;
+import com.lex.app.R;
+import com.lex.app.domain.HomeListData.NewsData;
+import com.lidroid.xutils.BitmapUtils;
+
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+
+public class LibNewsListViewAdapter extends BaseAdapter {
+	private List<NewsData> mDataList;
+	private BitmapUtils bitmapUtils;
+	
+	public LibNewsListViewAdapter(List<NewsData> list) {
+		mDataList = list;
+		bitmapUtils = new BitmapUtils(BaseApplication.getContext());
+		bitmapUtils.configDefaultLoadFailedImage(R.drawable.demo);
+		bitmapUtils.configDefaultLoadingImage(R.drawable.demo);
+	}
+
+	@Override
+	public int getCount() {
+		return 0;
+	}
+
+	@Override
+	public Object getItem(int position) {
+		return null;
+	}
+
+	@Override
+	public long getItemId(int position) {
+		return 0;
+	}
+
+	@Override
+	public View getView(int position, View convertView, ViewGroup parent) {
+		return null;
+	}
+
+}

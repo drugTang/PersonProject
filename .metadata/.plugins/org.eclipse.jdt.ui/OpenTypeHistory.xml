@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=myApp/D:\/_Android\/sdk\/platforms\/android-19\/android.jar&lt;android.app(Activity.class[Activity" modifiers="33" timestamp="1444261972544"/>
+<typeInfo handle="=myApp/src&lt;com.lex.app.fragment{BaseFragment.java[BaseFragment" modifiers="1025" timestamp="1445747101768"/>
+<typeInfo handle="=App/D:\/_Android\/sdk\/platforms\/android-23\/android.jar&lt;android.app(Activity.class[Activity" modifiers="33" timestamp="1439536224000"/>
+<typeInfo handle="=myApp/src&lt;com.lex.app.activity{BaseActivity.java[BaseActivity" modifiers="1" timestamp="1445747675607"/>
+<typeInfo handle="=myApp/src&lt;com.lex.app.pages{BaseContentPager.java[BaseContentPager" modifiers="1025" timestamp="1445869364207"/>
+<typeInfo handle="=myApp/D:\/_Android\/sdk\/platforms\/android-19\/android.jar&lt;android.widget(BaseAdapter.class[BaseAdapter" modifiers="1057" timestamp="1444261972544"/>
+<typeInfo handle="=App/D:\/_Android\/sdk\/platforms\/android-23\/android.jar&lt;android.widget(TextView.class[TextView" modifiers="33" timestamp="1439536224000"/>
+<typeInfo handle="=App/src&lt;com.lex.love.pager{BaseFramePager.java[BaseFramePager" modifiers="1025" timestamp="1446358011131"/>
+<typeInfo handle="=PhotoWallFallsDemo/D:\/_Android\/sdk\/platforms\/android-23\/android.jar&lt;android.widget(ScrollView.class[ScrollView" modifiers="33" timestamp="1439536224000"/>
+<typeInfo handle="=App/src&lt;com.lex.love.pager{BaseContentPager.java[BaseContentPager" modifiers="1025" timestamp="1446360239685"/>
+</typeInfoHistroy>

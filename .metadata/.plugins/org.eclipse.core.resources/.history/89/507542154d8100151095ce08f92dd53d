@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="app_name">Life</string>
+
+    <string name="home_name">我</string>
+    <string name="pic_name">她</string>
+    <string name="other_name">我们</string>
+
+</resources>

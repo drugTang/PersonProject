@@ -1,0 +1,15 @@
+package com.lex.app.pages.lib;
+
+import com.lex.app.pages.BaseContentPager;
+
+import android.view.View;
+
+public class LibBorrorDetailPager extends BaseContentPager {
+
+	@Override
+	public View initView() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

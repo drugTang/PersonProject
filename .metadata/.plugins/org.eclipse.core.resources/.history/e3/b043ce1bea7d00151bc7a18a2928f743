@@ -1,0 +1,45 @@
+package com.lex.app.adapter;
+
+import java.util.List;
+
+import com.lex.app.BaseApplication;
+import com.lex.app.domain.MessageData.SingleData;
+import com.lidroid.xutils.BitmapUtils;
+
+import android.content.Context;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+
+public class BbsListViewAdapter extends BaseAdapter {
+	private List<SingleData> mDataList;
+	private BitmapUtils bitmapUtils;
+	private Context context;
+	
+	public BbsListViewAdapter(List<SingleData> list) {
+		mDataList = list;
+		context = BaseApplication.getContext();
+		bitmapUtils = new BitmapUtils(context);
+	}
+
+	@Override
+	public int getCount() {
+		return mDataList.size();
+	}
+
+	@Override
+	public SingleData getItem(int position) {
+		return mDataList.get(position);
+	}
+
+	@Override
+	public long getItemId(int position) {
+		return 0;
+	}
+
+	@Override
+	public View getView(int position, View convertView, ViewGroup parent) {
+		return null;
+	}
+
+}

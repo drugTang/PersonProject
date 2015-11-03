@@ -1,0 +1,24 @@
+package com.lex.love.pager.content;
+
+import com.lex.love.pager.BaseContentPager;
+
+import android.app.Activity;
+import android.view.View;
+
+public class HomeContentPager extends BaseContentPager{
+
+	public HomeContentPager(Activity activity) {
+		super(activity);
+	}
+
+	@Override
+	public View initView() {
+		return null;
+	}
+	
+	@Override
+	public void initData() {
+		
+	}
+
+}

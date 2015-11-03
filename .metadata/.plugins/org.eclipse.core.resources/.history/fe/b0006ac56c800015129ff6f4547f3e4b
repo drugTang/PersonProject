@@ -1,0 +1,7 @@
+package com.lex.photowall;
+
+import android.widget.ScrollView;
+
+public class MyScrollView extends ScrollView {
+
+}

@@ -1,0 +1,25 @@
+package com.lex.app.pages.lib;
+
+import com.lex.app.pages.BaseContentPager;
+
+import android.app.Activity;
+import android.view.View;
+
+/**
+ * 图书馆热门搜索页面
+ * 
+ * @author Administrator
+ *
+ */
+public class LibSearchDetailPager extends BaseContentPager {
+
+	public LibSearchDetailPager(Activity activity) {
+		super(activity);
+	}
+
+	@Override
+	public View initView() {
+		return null;
+	}
+
+}

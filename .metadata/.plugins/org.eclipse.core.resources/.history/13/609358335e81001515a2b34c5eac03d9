@@ -1,0 +1,27 @@
+package com.lex.love.pager.content;
+
+import com.lex.love.R;
+import com.lex.love.pager.BaseContentPager;
+
+import android.app.Activity;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.ImageButton;
+
+public class OtherContentPager extends BaseContentPager {
+	private EditText mContentText;
+	private ImageButton mSendButton;
+
+	public OtherContentPager(Activity activity) {
+		super(activity);
+	}
+
+	@Override
+	public View initView() {
+		View view = View.inflate(mActivity, R.layout.other_content_pager_view, null);
+		mContentText = (EditText) view.findViewById(R.id.et_content);
+		mSendButton = (ImageButton) view.findViewById(R.id.ib_send);
+		return view;
+	}
+
+}

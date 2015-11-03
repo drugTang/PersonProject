@@ -1,0 +1,25 @@
+package com.lex.app.pages.lib;
+
+import com.lex.app.pages.BaseContentPager;
+
+import android.app.Activity;
+import android.view.View;
+
+/**
+ * 图书馆热门借阅页面
+ * 
+ * @author Administrator
+ *
+ */
+public class LibBorrowDetailPager extends BaseContentPager {
+
+	public LibBorrowDetailPager(Activity activity) {
+		super(activity);
+	}
+
+	@Override
+	public View initView() {
+		return null;
+	}
+
+}

@@ -1,0 +1,28 @@
+package com.lex.app.pages.lib;
+
+import com.lex.app.pages.BaseContentPager;
+
+import android.app.Activity;
+import android.view.View;
+import android.widget.TextView;
+
+/**
+ * 图书馆热门借阅页面
+ * 
+ * @author Administrator
+ *
+ */
+public class LibBorrowDetailPager extends BaseContentPager {
+
+	public LibBorrowDetailPager(Activity activity) {
+		super(activity);
+	}
+
+	@Override
+	public View initView() {
+		TextView view = new TextView(mActivity);
+		view.setText("热门借阅页面");
+		return view;
+	}
+
+}

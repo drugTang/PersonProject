@@ -1,0 +1,47 @@
+1445731814909	Extracts string '首页' into R.string.home
+1445735956303	Move compilation unit
+1445739874321	Delete element
+1445760532150	Rename resource 'home_pager_view.xml'
+1445760539831	Rename resource 'home_pager_view_top.xml'
+1445760602767	Delete element
+1445760655262	Rename resource 'content_pager_view.xml'
+1445762127177	Delete element
+1445762139951	Rename type 'HomePager'
+1445762150984	Rename type 'BbsPager'
+1445762157059	Rename type 'LibPager'
+1445762162960	Rename type 'SettingPager'
+1445762167614	Rename type 'StorePager'
+1445762561725	Rename resource 'context_pager_view.xml'
+1445762588388	Rename resource 'frame_pager_view.xml'
+1445778444404	Convert local variable 'categoryData' to field
+1445828514980	Rename package 'com.lex.app.pages.content'
+1445828540114	Rename type 'HomePagerDetail'
+1445869327448	Move compilation unit
+1445869364217	Rename type 'BaseHomePager'
+1445908474791	Rename resource 'vpi__tab_selected_holo.9.png'
+1445908481480	Rename resource 'vpi__tab_unselected_holo.9.png'
+1445908793104	Extracts string '本馆新闻' into R.string.lib_news
+1445908809327	Extracts string '热门借阅' into R.string.lib_borrow
+1445908828632	Extracts string '热门搜索' into R.string.lib_search
+1445908920644	Extracts string 'ImageButton' into R.string.imge_content_description
+1445908980665	Extracts string '搜索' into R.string.search_edit_hint
+1445909035248	Extracts string '历史记录' into R.string.history_title
+1445909067716	Extracts string 'ImageView' into R.string.image_view_content_decription
+1445909436236	Rename type 'HomePagerAdapter'
+1445909876516	Move compilation unit
+1445910060135	Rename type 'LibBorrorDetailPager'
+1445941979243	Rename resource 'lib_borrow_detail_list_item.xml'
+1446023141862	Delete element
+1446023149774	Rename resource 'add_small2.png'
+1446030769500	Rename resource 'down1.png'
+1446032898529	Rename resource 'ic_treehole_hehe_item_press.png'
+1446032921762	Rename resource 'ic_treehole_hehe.png'
+1446105181427	Delete element
+1446105213591	Rename resource 'ic_bar_comment_normal.png'
+1446105333139	Delete element
+1446105346827	Rename resource 'ic_card_comment.png'
+1446105396216	Rename resource 'ic_treehole_message_share.png'
+1446177759960	Rename type 'StoreGridView'
+1446188195505	Rename resource 'store_grid_view_item.xml'
+1446190603749	Rename resource 'store_content_pager_grid_view.xml'
+1446193292803	Rename type 'CategoryData'

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/other_bg"
+    android:orientation="vertical" >
+    
+    <TextView android:id="@+id/tv_other_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:text="某天..也许你也想对我说些什么..."/>
+    
+    <EditText android:id="@+id/et_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:gravity="left|top"
+        />
+    <Button android:id="@+id/ib_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send"/>
+
+</LinearLayout>

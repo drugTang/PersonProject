@@ -1,0 +1,36 @@
+package com.lex.app.pages.lib;
+
+import com.lex.app.R;
+import com.lex.app.adapter.LibNewsListViewAdapter;
+import com.lex.app.pages.BaseContentPager;
+
+import android.app.Activity;
+import android.view.View;
+import android.widget.ListView;
+
+/**
+ * 图书馆新闻页面
+ * 
+ * @author Administrator
+ *
+ */
+public class LibNewsDetailPager extends BaseContentPager {
+	private ListView mListView;
+
+	public LibNewsDetailPager(Activity activity) {
+		super(activity);
+	}
+
+	@Override
+	public View initView() {
+		View  view = View.inflate(mActivity, R.layout.lib_news_detail_pager_view, null);
+		mListView = (ListView)view.findViewById(R.id.lv_lib_news);
+		return view;
+	}
+	
+	@Override
+	public void initData() {
+		mListView.setAdapter(new LibNewsListViewAdapter(list));
+	}
+
+}

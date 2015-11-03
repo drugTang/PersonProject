@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">myApp</string>
+
+    <string name="home">首页</string>
+    <string name="lib">图书馆</string>
+    <string name="bbs">论坛</string>
+    <string name="store">商城</string>
+    <string name="setting">设置</string>
+    <string name="lib_news">本馆新闻</string>
+
+</resources>

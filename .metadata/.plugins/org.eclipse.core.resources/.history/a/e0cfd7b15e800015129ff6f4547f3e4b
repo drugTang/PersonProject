@@ -1,0 +1,25 @@
+package com.lex.love.pager;
+
+import com.lex.love.R;
+import com.lex.love.activity.MainActivity;
+
+import android.app.Activity;
+import android.view.View;
+import android.widget.TextView;
+
+public abstract class BaseFramePager {
+	public MainActivity mActivity;
+	public View mRootView;
+	public TextView mTitleText;
+	
+	public BaseFramePager(Activity activity) {
+		mActivity = (MainActivity) activity;
+		mRootView = View.inflate(mActivity, R.layout.base_frame_pager_view, null);
+		mRootView.findViewById(R.id.tv_title);
+		initView();
+	}
+	
+	public abstract void initView();
+	
+	public void initData(){}
+}
