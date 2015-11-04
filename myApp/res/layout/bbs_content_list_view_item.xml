@@ -17,7 +17,7 @@
         android:layout_margin="10dp"
         android:layout_toRightOf="@id/ib_head"
         android:singleLine="true"
-        android:textColor="#000"
+        android:textColor="#c000"
         android:textSize="18sp" />
 
     <TextView
@@ -44,7 +44,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/ib_head"
         android:padding="10dp"
-        android:textColor="#000" />
+        android:textColor="#c000" />
 
     <LinearLayout
         android:layout_width="match_parent"

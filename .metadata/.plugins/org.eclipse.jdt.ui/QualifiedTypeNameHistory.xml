@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="android.widget.ListView"/>
 <fullyQualifiedTypeName name="java.lang.Appendable"/>
 <fullyQualifiedTypeName name="android.app.Application"/>
 <fullyQualifiedTypeName name="android.widget.BaseAdapter"/>
@@ -12,8 +11,6 @@
 <fullyQualifiedTypeName name="com.lex.app.domain.StoreData"/>
 <fullyQualifiedTypeName name="com.lex.app.domain.StoreData.SingleData"/>
 <fullyQualifiedTypeName name="com.lex.app.BaseApplication"/>
-<fullyQualifiedTypeName name="com.lex.app.R"/>
-<fullyQualifiedTypeName name="com.lex.app.R.layout"/>
 <fullyQualifiedTypeName name="com.lex.app.R.id"/>
 <fullyQualifiedTypeName name="com.lex.app.constans.Constans"/>
 <fullyQualifiedTypeName name="java.lang.Thread"/>
@@ -53,11 +50,14 @@
 <fullyQualifiedTypeName name="com.lex.love.pager.content.PicContentPager"/>
 <fullyQualifiedTypeName name="com.lex.love.pager.frame.OtherFramePager"/>
 <fullyQualifiedTypeName name="android.view.View"/>
-<fullyQualifiedTypeName name="com.lex.love.R"/>
-<fullyQualifiedTypeName name="com.lex.love.R.layout"/>
 <fullyQualifiedTypeName name="com.lex.love.R.id"/>
 <fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
 <fullyQualifiedTypeName name="android.telephony.SmsManager"/>
 <fullyQualifiedTypeName name="android.app.PendingIntent"/>
 <fullyQualifiedTypeName name="android.widget.Toast"/>
+<fullyQualifiedTypeName name="com.lex.love.R"/>
+<fullyQualifiedTypeName name="com.lex.love.R.layout"/>
+<fullyQualifiedTypeName name="com.lex.app.pages.frame.ShoppingCarFramePager"/>
+<fullyQualifiedTypeName name="com.lex.app.R"/>
+<fullyQualifiedTypeName name="com.lex.app.R.layout"/>
 </qualifiedTypeNameHistroy>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <ListView android:id="@+id/lv_shopping_car"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </ListView>
+    
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton android:id="@+id/ib_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:padding="5dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/shopping_car_choose_button_selector"/>
+        <TextView android:id="@+id/tv_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ib_all"
+            android:textSize="16sp"
+            android:textColor="#c000"
+            android:padding="5dp"
+            android:layout_centerVertical="true"
+            android:text="全选"/>
+        <Button android:id="@+id/btn_buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:background="#2290ff"
+            android:textSize="16sp"
+            android:textColor="#fff"
+            android:text="结算(0)"/>
+        <TextView android:id="@+id/tv_count_lable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/btn_buy"
+            android:text="合计:"
+            android:textSize="14sp"
+            android:textColor="#c000"/>
+        <TextView android:id="@+id/tv_count" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#ccF44336"/>
+    </RelativeLayout>
+    
+
+</LinearLayout>

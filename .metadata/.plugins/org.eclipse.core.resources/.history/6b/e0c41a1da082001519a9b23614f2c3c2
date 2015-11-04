@@ -1,0 +1,26 @@
+package com.lex.app.pages.content;
+
+import com.lex.app.R;
+import com.lex.app.pages.BaseContentPager;
+
+import android.app.Activity;
+import android.view.View;
+
+public class ShoppingCarContentPager extends BaseContentPager {
+
+	public ShoppingCarContentPager(Activity activity) {
+		super(activity);
+	}
+
+	@Override
+	public View initView() {
+		View view = View.inflate(mActivity, R.layout.shopping_car_pager_view, null);
+		return view;
+	}
+	
+	@Override
+	public void initData() {
+		
+	}
+
+}

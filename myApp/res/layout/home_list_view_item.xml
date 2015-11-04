@@ -19,7 +19,7 @@
         android:padding="5dp"
         android:maxLines="2"
         android:ellipsize="end"
-        android:textColor="#000"
+        android:textColor="#c000"
         android:textSize="18sp"/>
     
     <TextView android:id="@+id/tv_time"

@@ -51,8 +51,8 @@
         <RadioButton
             android:id="@+id/radio_setting"
             style="@style/RadioButtonStyle"
-            android:drawableTop="@drawable/radio_button_setting_selector"
-            android:text="@string/setting" />
+            android:drawableTop="@drawable/radio_button_shopping_car_selector"
+            android:text="@string/shoppingcar" />
     </RadioGroup>
     
 

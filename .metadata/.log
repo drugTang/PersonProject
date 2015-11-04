@@ -646,3 +646,131 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.jdt.core 4 0 2015-11-03 08:47:58.975
 !MESSAGE Invalid ZIP archive: E:\_android\GooglePlay\actionbarsherlock\bin\actionbarsherlock.jar
+!SESSION 2015-11-04 10:10:45.908 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_20
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-11-04 10:11:49.272
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Administrator'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2015-11-04 15:06:46.745
+!MESSAGE Failed to load properties file for project 'GooglePlay'
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2015-11-04 15:14:22.052
+!MESSAGE NPW ignoring malformed manifest D:\_Android\sdk\samples\android-21\background\JobScheduler\Application\tests\AndroidManifest.xml
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2015-11-04 15:14:22.384
+!MESSAGE NPW ignoring malformed manifest D:\_Android\sdk\samples\android-21\connectivity\CardReader\Application\tests\AndroidManifest.xml
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2015-11-04 15:14:24.115
+!MESSAGE NPW ignoring malformed manifest D:\_Android\sdk\samples\android-21\media\Camera2Basic\Application\tests\AndroidManifest.xml
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2015-11-04 15:14:24.216
+!MESSAGE NPW ignoring malformed manifest D:\_Android\sdk\samples\android-21\media\MediaRouter\Application\tests\AndroidManifest.xml
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2015-11-04 15:14:25.201
+!MESSAGE NPW ignoring malformed manifest D:\_Android\sdk\samples\android-21\ui\DisplayingBitmaps\Application\tests\AndroidManifest.xml
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2015-11-04 15:14:25.453
+!MESSAGE NPW ignoring malformed manifest D:\_Android\sdk\samples\android-21\ui\SlidingTabsBasic\Application\tests\AndroidManifest.xml
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2015-11-04 15:14:25.512
+!MESSAGE NPW ignoring malformed manifest D:\_Android\sdk\samples\android-21\ui\SwipeRefreshLayoutBasic\Application\tests\AndroidManifest.xml
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2015-11-04 15:14:25.566
+!MESSAGE NPW ignoring malformed manifest D:\_Android\sdk\samples\android-21\ui\SwipeRefreshListFragment\Application\tests\AndroidManifest.xml
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2015-11-04 15:14:25.586
+!MESSAGE NPW ignoring malformed manifest D:\_Android\sdk\samples\android-21\ui\SwipeRefreshMultipleViews\Application\tests\AndroidManifest.xml
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2015-11-04 15:14:25.797
+!MESSAGE NPW ignoring malformed manifest D:\_Android\sdk\samples\android-21\ui\views\Elevation\ElevationDrag\Application\tests\AndroidManifest.xml
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2015-11-04 15:14:25.854
+!MESSAGE NPW ignoring malformed manifest D:\_Android\sdk\samples\android-21\ui\views\NavigationDrawer\Application\tests\AndroidManifest.xml
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2015-11-04 15:14:25.873
+!MESSAGE NPW ignoring malformed manifest D:\_Android\sdk\samples\android-21\ui\views\RevealEffect\RevealEffectBasic\Application\tests\AndroidManifest.xml
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2015-11-04 15:14:26.622
+!MESSAGE NPW ignoring malformed manifest D:\_Android\sdk\samples\android-21\background\JobScheduler\Application\tests\AndroidManifest.xml
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2015-11-04 15:14:26.639
+!MESSAGE NPW ignoring malformed manifest D:\_Android\sdk\samples\android-21\connectivity\CardReader\Application\tests\AndroidManifest.xml
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2015-11-04 15:14:26.748
+!MESSAGE NPW ignoring malformed manifest D:\_Android\sdk\samples\android-21\media\Camera2Basic\Application\tests\AndroidManifest.xml
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2015-11-04 15:14:26.760
+!MESSAGE NPW ignoring malformed manifest D:\_Android\sdk\samples\android-21\media\MediaRouter\Application\tests\AndroidManifest.xml
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2015-11-04 15:14:26.820
+!MESSAGE NPW ignoring malformed manifest D:\_Android\sdk\samples\android-21\ui\DisplayingBitmaps\Application\tests\AndroidManifest.xml
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2015-11-04 15:14:26.840
+!MESSAGE NPW ignoring malformed manifest D:\_Android\sdk\samples\android-21\ui\SlidingTabsBasic\Application\tests\AndroidManifest.xml
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2015-11-04 15:14:26.847
+!MESSAGE NPW ignoring malformed manifest D:\_Android\sdk\samples\android-21\ui\SwipeRefreshLayoutBasic\Application\tests\AndroidManifest.xml
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2015-11-04 15:14:26.851
+!MESSAGE NPW ignoring malformed manifest D:\_Android\sdk\samples\android-21\ui\SwipeRefreshListFragment\Application\tests\AndroidManifest.xml
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2015-11-04 15:14:26.855
+!MESSAGE NPW ignoring malformed manifest D:\_Android\sdk\samples\android-21\ui\SwipeRefreshMultipleViews\Application\tests\AndroidManifest.xml
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2015-11-04 15:14:26.871
+!MESSAGE NPW ignoring malformed manifest D:\_Android\sdk\samples\android-21\ui\views\Elevation\ElevationDrag\Application\tests\AndroidManifest.xml
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2015-11-04 15:14:26.879
+!MESSAGE NPW ignoring malformed manifest D:\_Android\sdk\samples\android-21\ui\views\NavigationDrawer\Application\tests\AndroidManifest.xml
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2015-11-04 15:14:26.884
+!MESSAGE NPW ignoring malformed manifest D:\_Android\sdk\samples\android-21\ui\views\RevealEffect\RevealEffectBasic\Application\tests\AndroidManifest.xml
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2015-11-04 15:14:27.773
+!MESSAGE NPW ignoring malformed manifest D:\_Android\sdk\samples\android-21\background\JobScheduler\Application\tests\AndroidManifest.xml
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2015-11-04 15:14:27.801
+!MESSAGE NPW ignoring malformed manifest D:\_Android\sdk\samples\android-21\connectivity\CardReader\Application\tests\AndroidManifest.xml
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2015-11-04 15:14:27.987
+!MESSAGE NPW ignoring malformed manifest D:\_Android\sdk\samples\android-21\media\Camera2Basic\Application\tests\AndroidManifest.xml
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2015-11-04 15:14:28.007
+!MESSAGE NPW ignoring malformed manifest D:\_Android\sdk\samples\android-21\media\MediaRouter\Application\tests\AndroidManifest.xml
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2015-11-04 15:14:28.069
+!MESSAGE NPW ignoring malformed manifest D:\_Android\sdk\samples\android-21\ui\DisplayingBitmaps\Application\tests\AndroidManifest.xml
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2015-11-04 15:14:28.089
+!MESSAGE NPW ignoring malformed manifest D:\_Android\sdk\samples\android-21\ui\SlidingTabsBasic\Application\tests\AndroidManifest.xml
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2015-11-04 15:14:28.096
+!MESSAGE NPW ignoring malformed manifest D:\_Android\sdk\samples\android-21\ui\SwipeRefreshLayoutBasic\Application\tests\AndroidManifest.xml
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2015-11-04 15:14:28.100
+!MESSAGE NPW ignoring malformed manifest D:\_Android\sdk\samples\android-21\ui\SwipeRefreshListFragment\Application\tests\AndroidManifest.xml
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2015-11-04 15:14:28.104
+!MESSAGE NPW ignoring malformed manifest D:\_Android\sdk\samples\android-21\ui\SwipeRefreshMultipleViews\Application\tests\AndroidManifest.xml
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2015-11-04 15:14:28.119
+!MESSAGE NPW ignoring malformed manifest D:\_Android\sdk\samples\android-21\ui\views\Elevation\ElevationDrag\Application\tests\AndroidManifest.xml
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2015-11-04 15:14:28.127
+!MESSAGE NPW ignoring malformed manifest D:\_Android\sdk\samples\android-21\ui\views\NavigationDrawer\Application\tests\AndroidManifest.xml
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2015-11-04 15:14:28.133
+!MESSAGE NPW ignoring malformed manifest D:\_Android\sdk\samples\android-21\ui\views\RevealEffect\RevealEffectBasic\Application\tests\AndroidManifest.xml
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2015-11-04 15:14:43.607
+!MESSAGE Failed to load properties file for project 'ActionBarCompat'

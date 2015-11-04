@@ -10,7 +10,7 @@ import com.lex.app.pages.BasePager;
 import com.lex.app.pages.frame.BbsFramePager;
 import com.lex.app.pages.frame.HomeFramePager;
 import com.lex.app.pages.frame.LibFramePager;
-import com.lex.app.pages.frame.SettingFramePager;
+import com.lex.app.pages.frame.ShoppingCarFramePager;
 import com.lex.app.pages.frame.StoreFramePager;
 
 import android.support.v4.view.ViewPager;
@@ -43,7 +43,7 @@ public class ContentFragment extends BaseFragment {
 		mPagerList.add(new LibFramePager(mActivity));
 		mPagerList.add(new BbsFramePager(mActivity));
 		mPagerList.add(new StoreFramePager(mActivity));
-		mPagerList.add(new SettingFramePager(mActivity));
+		mPagerList.add(new ShoppingCarFramePager(mActivity));
 
 		mContentPagerAdapter = new ContentPagerAdapter(mPagerList);
 

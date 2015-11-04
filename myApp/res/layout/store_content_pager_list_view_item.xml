@@ -19,7 +19,7 @@
         android:layout_toRightOf="@id/iv_store_like_image"
         android:singleLine="true"
         android:text="尚客优快捷酒店"
-        android:textColor="#000"
+        android:textColor="#c000"
         android:textSize="18sp" />
 
     <TextView
