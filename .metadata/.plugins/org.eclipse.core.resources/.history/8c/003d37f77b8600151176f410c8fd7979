@@ -1,0 +1,5 @@
+package com.lex.app.activity;
+
+public class SettingActivity extends BaseActivity {
+
+}

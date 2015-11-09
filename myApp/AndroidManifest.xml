@@ -25,7 +25,14 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.SearchActivity"></activity>
+        <activity android:name=".activity.PublishMessageActivity"></activity>
+        <activity android:name=".activity.SettingActivity"></activity>
+        <activity android:name=".activity.LibraryActivity"></activity>
+        <activity android:name=".activity.CommentActivity"></activity>
+        <activity android:name=".activity.OrderActivity"></activity>
+        <activity android:name=".activity.ShareActivity"></activity>
         <activity android:name=".activity.MessageActivity"></activity>
+        <activity android:name=".activity.HomeNewsDetailActivity"></activity>
         
     </application>
 

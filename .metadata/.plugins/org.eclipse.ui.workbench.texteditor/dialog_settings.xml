@@ -6,20 +6,20 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="SampleCirclesDefault" key="selection"/>
+		<item value="mViewPager" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="mViewPager"/>
+			<item value="mListView"/>
 			<item value="SampleCirclesDefault"/>
 			<item value="circle"/>
 			<item value="circleIndi"/>
 			<item value="Ci"/>
 			<item value="SampleTabsD"/>
 			<item value="SampleTabDefault"/>
-			<item value="mTabLayout"/>
-			<item value="mViewPager"/>
 		</list>
 		<list key="replacehistory">
 		</list>

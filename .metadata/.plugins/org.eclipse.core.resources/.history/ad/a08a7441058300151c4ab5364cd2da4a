@@ -1,0 +1,71 @@
+package com.lex.googleplay;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarActivity;
+import android.support.v7.widget.SearchView;
+import android.support.v7.widget.SearchView.OnQueryTextListener;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.Toast;
+
+public class MainActivity extends ActionBarActivity implements OnQueryTextListener{
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		ActionBar actionBar = getSupportActionBar();
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		getMenuInflater().inflate(R.menu.main, menu);
+		if(android.os.Build.VERSION.SDK_INT > 7) {
+			SearchView searchView = (SearchView) menu.findItem(R.id.action_search).getActionView();
+			searchView.setOnQueryTextListener(this);//设置监听器
+		}
+		return true;
+	}
+	
+	public void onClick(View view) {
+		Intent intent = new Intent(this,AppDetailActivity.class);
+		startActivity(intent);
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		int id = item.getItemId();
+		if (id == R.id.action_search) {
+			Toast.makeText(this, "搜索", Toast.LENGTH_SHORT).show();
+			return true;
+		}
+		return super.onOptionsItemSelected(item);
+	}
+
+	/**
+	 * 搜索框文本改变时调用
+	 * 返回值需要为true,否则也不调用
+	 */
+	@Override
+	public boolean onQueryTextChange(String newText) {
+//		Toast.makeText(this, newText, Toast.LENGTH_SHORT).show();
+		return false;
+	}
+
+	
+	/**
+	 * 搜索框文本提交时调用
+	 * 返回值需要为true,否则也不会调用
+	 * 
+	 * @param query
+	 * @return
+	 */
+	@Override
+	public boolean onQueryTextSubmit(String query) {
+		Toast.makeText(this, query, Toast.LENGTH_SHORT).show();
+		return true;
+	}
+}

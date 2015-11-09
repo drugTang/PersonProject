@@ -1,5 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
     <string name="app_name">Google Play</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_search">搜索</string>
+    <string name="drawer_close">抽屉关闭</string>
+    <string name="drawer_open">抽屉打开</string>
 
 </resources>

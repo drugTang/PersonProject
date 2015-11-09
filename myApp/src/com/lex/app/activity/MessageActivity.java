@@ -8,6 +8,6 @@ public class MessageActivity extends BaseActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_bbs_message);
+		setContentView(R.layout.activity_message);
 	}
 }

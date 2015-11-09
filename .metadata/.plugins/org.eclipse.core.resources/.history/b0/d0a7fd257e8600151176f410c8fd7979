@@ -1,0 +1,13 @@
+package com.lex.app.activity;
+
+import com.lex.app.R;
+
+import android.os.Bundle;
+
+public class LibraryActivity extends BaseActivity {
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContextView(R.layout);
+	}
+}

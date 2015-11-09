@@ -1,0 +1,86 @@
+package com.lex.app.adapter;
+
+import java.util.List;
+
+import com.lex.app.BaseApplication;
+import com.lex.app.domain.HomeListData.TopNewsData;
+import com.lidroid.xutils.BitmapUtils;
+
+import android.content.Context;
+import android.os.Handler;
+import android.support.v4.view.PagerAdapter;
+import android.view.MotionEvent;
+import android.view.View;
+import android.view.View.OnTouchListener;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.ImageView.ScaleType;
+
+public class HomeTopNewsPagerAdapter extends PagerAdapter implements OnTouchListener{
+	private List<TopNewsData> mDataList;
+	private BitmapUtils bitmapUtils;
+	private Context context;
+	private Handler mHandler;
+	
+	public HomeTopNewsPagerAdapter(List<TopNewsData> list) {
+		mDataList = list;
+		context = BaseApplication.getContext();
+		bitmapUtils = new BitmapUtils(context);
+	}
+
+	@Override
+	public int getCount() {
+		return mDataList.size();
+	}
+
+	@Override
+	public boolean isViewFromObject(View arg0, Object arg1) {
+		return arg0 == arg1;
+	}
+	
+	@Override
+	public Object instantiateItem(ViewGroup container, int position) {
+		ImageView image = new ImageView(context);
+		image.setScaleType(ScaleType.FIT_XY);
+		bitmapUtils.display(image, mDataList.get(position).topimage);
+		image.setOnTouchListener(this);
+		container.addView(image);
+		return image;
+	}
+	
+	@Override
+	public void destroyItem(ViewGroup container, int position, Object object) {
+		container.removeView((View)object);
+	}
+	
+	public void setHandler(Handler handler) {
+		this.mHandler = handler;
+	}
+	
+
+	@Override
+	public boolean onTouch(View v, MotionEvent event) {
+		switch (event.getAction()) {
+		case MotionEvent.ACTION_DOWN:
+			if(mHandler != null) {
+				mHandler.removeCallbacksAndMessages(null);
+			}
+			break;
+		case MotionEvent.ACTION_CANCEL:
+			if(mHandler != null) {
+				mHandler.sendEmptyMessageDelayed(0, 3000);
+			}
+			break;
+		case MotionEvent.ACTION_UP:
+			if(mHandler != null) {
+				mHandler.sendEmptyMessageDelayed(0, 3000);
+			}
+			break;
+
+		default:
+			break;
+		}
+		return true;
+	}
+
+}

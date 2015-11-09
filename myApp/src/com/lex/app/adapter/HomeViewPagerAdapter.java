@@ -2,6 +2,7 @@ package com.lex.app.adapter;
 
 import java.util.List;
 
+import com.lex.app.R;
 import com.lex.app.domain.HomeCategoryData.Children;
 import com.lex.app.pages.home.HomeDetailPager;
 
@@ -23,7 +24,6 @@ public class HomeViewPagerAdapter extends PagerAdapter {
 	public HomeViewPagerAdapter(List<HomeDetailPager> list,List<Children> childrenData) {
 		mPagerList = list;
 		mChildren = childrenData;
-		System.out.println(mChildren);
 	}
 	
 	@Override
@@ -53,4 +53,5 @@ public class HomeViewPagerAdapter extends PagerAdapter {
 		container.removeView((View)object);
 	}
 
+	
 }

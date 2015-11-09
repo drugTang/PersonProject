@@ -4,8 +4,9 @@ import java.util.List;
 
 import com.google.gson.Gson;
 import com.lex.app.R;
+import com.lex.app.activity.HomeNewsDetailActivity;
 import com.lex.app.adapter.HomeListViewAdapter;
-import com.lex.app.adapter.TopNewsPagerAdapter;
+import com.lex.app.adapter.HomeTopNewsPagerAdapter;
 import com.lex.app.constans.Constans;
 import com.lex.app.domain.HomeListData;
 import com.lex.app.domain.HomeListData.TopNewsData;
@@ -18,6 +19,9 @@ import com.lidroid.xutils.http.client.HttpRequest.HttpMethod;
 import com.viewpagerindicator.CirclePageIndicator;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.os.Handler;
+import android.os.Message;
 import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.view.View;
@@ -34,6 +38,7 @@ public class HomeDetailPager extends BaseContentPager implements OnPageChangeLis
 	private String mUrl;
 	private HomeListData mHomeListData;
 	private List<TopNewsData> mTopNewsData;
+	private Handler mHandler;
 
 	public HomeDetailPager(Activity activity, String url) {
 		super(activity);
@@ -79,22 +84,43 @@ public class HomeDetailPager extends BaseContentPager implements OnPageChangeLis
 		Gson gson = new Gson();
 		mHomeListData = gson.fromJson(result, HomeListData.class);
 		mTopNewsData = mHomeListData.data.topnews;
-
-		mViewPager.setAdapter(new TopNewsPagerAdapter(mTopNewsData));
+		final HomeTopNewsPagerAdapter mViewPagerAdapter = new HomeTopNewsPagerAdapter(mTopNewsData, mActivity);
+		mViewPager.setAdapter(mViewPagerAdapter);
 		mIndicator.setViewPager(mViewPager);
 		mIndicator.setOnPageChangeListener(this);
 		mIndicator.onPageSelected(0);
 		mListView.setAdapter(new HomeListViewAdapter(mHomeListData.data.news));
 		mListView.setOnItemClickListener(new MyOnClickListener());
+		if (mHandler == null) {
+			mHandler = new Handler() {
+				@Override
+				public void handleMessage(Message msg) {
+					int currentItem = mViewPager.getCurrentItem();
+					if (currentItem < mTopNewsData.size() - 1) {
+						currentItem++;
+					} else {
+						currentItem = 0;
+					}
+					mIndicator.setCurrentItem(currentItem);
+					mHandler.sendEmptyMessageDelayed(0, 3000);
+				}
+			};
+			mViewPagerAdapter.setHandler(mHandler);
+
+			mHandler.sendEmptyMessageDelayed(0, 3000);
+		}
 	}
-	
-	private class MyOnClickListener implements OnItemClickListener{
+
+	private class MyOnClickListener implements OnItemClickListener {
 
 		@Override
 		public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-			//这里可以响应事件，跳转到相应的页面
+			Intent intent = new Intent(mActivity, HomeNewsDetailActivity.class);
+			System.out.println(position);
+			intent.putExtra("url", mHomeListData.data.news.get(position-1).url);
+			mActivity.startActivity(intent);
 		}
-		
+
 	}
 
 	@Override
@@ -111,4 +137,5 @@ public class HomeDetailPager extends BaseContentPager implements OnPageChangeLis
 	public void onPageSelected(int position) {
 		mTopTitle.setText(mTopNewsData.get(position).title);
 	}
+
 }

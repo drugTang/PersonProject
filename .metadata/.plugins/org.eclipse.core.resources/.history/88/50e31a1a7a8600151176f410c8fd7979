@@ -1,0 +1,30 @@
+package com.lex.app.adapter;
+
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+
+public class LeftMenuListViewAdapter extends BaseAdapter {
+	private String[] menus = {"我的图书馆","我的订单","我的评论","我的分享","我的说说","设置"};
+
+	@Override
+	public int getCount() {
+		return menus.length;
+	}
+
+	@Override
+	public String getItem(int position) {
+		return menus[position];
+	}
+
+	@Override
+	public long getItemId(int position) {
+		return position;
+	}
+
+	@Override
+	public View getView(int position, View convertView, ViewGroup parent) {
+		return null;
+	}
+
+}

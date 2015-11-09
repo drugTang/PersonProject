@@ -31,7 +31,6 @@ public class ContentFragment extends BaseFragment {
 
 		mContentPager = (ViewPager) mRootView.findViewById(R.id.vp_content);
 		mRadioGroup = (RadioGroup) mRootView.findViewById(R.id.radio_group);
-
 		initData();
 		return mRootView;
 	}

@@ -1,7 +1,0 @@
-package com.lex.love.view;
-
-import android.widget.TextView;
-
-public class TypeView extends TextView {
-
-}

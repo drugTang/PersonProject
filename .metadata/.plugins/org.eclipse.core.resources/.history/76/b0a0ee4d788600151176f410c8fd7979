@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4F4F4F"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp" >
+
+        <ImageButton
+            android:id="@+id/ib_head"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/head" />
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/ib_head"
+            android:text="飞翔的企鹅"
+            android:textColor="@android:color/white" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_user_name"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignLeft="@id/tv_user_name"
+            android:layout_toRightOf="@id/ib_head"
+            android:src="@drawable/ic_user_lv3" />
+        <ImageView android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/divider"/>
+    </RelativeLayout>
+    
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#c0c0c0"
+            android:textSize="12sp"
+            android:padding="5dp"
+            android:text="&quot; 无欲则刚"/>
+        <ImageView android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/divider"/>
+    </LinearLayout>
+    
+    
+    <ListView android:id="@+id/lv_left_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+    </ListView>
+
+</LinearLayout>
